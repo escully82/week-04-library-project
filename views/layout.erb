@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,400italic,600italic,600,300italic' rel='stylesheet' type='text/css'
+    >
+    <style>
+
+    #header_box, #footer_box {
+	     clear: both;
+     }
+
+
+  #header_box {
+	   width: 100%;
+	   height: auto;
+    }
+
+
+    header {
+	   max-width: 1000px;
+	   margin-left: auto;
+	   margin-right: auto;
+     text-align:center;
+    }
+
+  nav {
+    float:center;
+    font-size: 75%;
+  }
+
+  nav li {
+    display:inline;
+  }
+
+  #nav_box {
+    width:100%;
+  }
+
+  nav a:link, nav a:visited {
+    text-decoration:none;
+    padding:0 5%;
+    background: none;
+    color: #43a7de;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+  }
+
+  nav a:hover {
+    color:black;
+  }
+
+    ul {
+      list-style-type: none;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight:300;
+      color:grey;
+    }
+
+    ol {
+      list-style-type: none;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight:300;
+      color:grey;
+    }
+
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight:600;
+      color:#43a7de;
+      font-size: 24pt;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight:600;
+      color:grey;
+    }
+
+    h3 {
+      text-align: center;
+      font-family:'Raleway', sans-serif;
+      font-weight:600;
+      color:grey;
+      font-size: 40pt;
+    }
+
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-weight:400;
+      color:grey;
+    }
+
+    .albert_quote {
+      font-family: 'Raleway', sans-serif;
+      font-weight:400;
+      color:grey;
+      margin: 5%;
+    }
+
+    /* center text */
+    .center_text {
+      text-align: center;
+    }
+
+
+    a:link, a:visited {
+      text-decoration:none;
+      background: none;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+
+    a:hover {
+    	color:grey;
+    }
+
+    .b1{
+	     margin:2% auto 5% auto;
+	     border-style:solid;
+	     border-width:thin;
+	     border-top-color:grey;
+	     border-right:none;
+	     border-bottom:none;
+	     border-left:none;
+     }
+
+     form {
+       text-align: center;
+       text-decoration:none;
+       background: none;
+       color: white;
+       font-family: 'Raleway', sans-serif;
+       font-weight: 400;
+     }
+
+     input {
+       text-decoration:none;
+       background: none;
+       color: white;
+       font-family: 'Raleway', sans-serif;
+       font-weight: 400;
+       text-align: center;
+     }
+
+     .left {
+       float:left;
+     }
+
+     .right {
+       float:right;
+     }
+
+     .center{
+       margin-left:auto;
+       margin-right:auto;
+     }
+
+     .space_top {
+       margin-top:5%;
+      }
+     .pad_top {
+       padding-top:5%;
+      }
+
+     .pad_right {
+       padding-right:5%;
+      }
+
+      .pad_bottom {
+      padding-bottom:5%;
+      }
+
+      .pad_left {
+        padding-left:5%;
+      }
+
+      .pad_all {
+        padding: 5%;
+      }
+
+      .c1{
+        background-color:rgba(67,167,222, 0.7)
+      }
+      background:rgba(#43a7de;.7)
+
+Grid system
+.grid_100,.grid_10,.grid_15,.grid_20,.grid_25,
+.grid_30,.grid_35,.grid_40,.grid_45,.grid_50,
+.grid_55,.grid_60,.grid_65,.grid_70,.grid_75,
+.grid_80,.grid_85,.grid_90,.grid_33,.grid_66{
+
+}
+
+.grid_100{
+  width:100%;
+  clear:both;
+}
+
+.grid_10{
+  width:10%;
+}
+
+.grid_15{
+  width:15%;
+}
+
+.grid_20{
+  width:20%;
+}
+
+.grid_25{
+  width:25%;
+}
+
+.grid_30{
+  width:30%;
+}
+
+.grid_35{
+  width:35%;
+}
+
+.grid_40{
+  width:40%;
+}
+
+.grid_45{
+  width:45%;
+}
+
+.grid_50{
+  width:50%;
+}
+
+.grid_55{
+  width:55%;
+}
+
+.grid_60{
+  width:60%;
+}
+
+.grid_65{
+  width:65%;
+}
+
+.grid_70{
+  width:70%;
+}
+
+.grid_75{
+  width:75%;
+}
+
+.grid_80{
+  width:80%;
+}
+
+.grid_85{
+  width:85%;
+}
+
+.grid_90{
+  width:90%;
+}
+
+.grid_33{
+  width:33.33%;
+}
+
+.grid_66{
+  width:66.66%;
+}
+
+
+
+    </style>
+    <title>Bug Tracker</title>
+  </head>
+  <div class = "b1" </div>
+  <body>
+
+    <div id="header_box">
+      <header class="clearfix">
+    <div id="nav_box">
+      <nav class="clearfix">
+        <div class="center">
+          <h1>Welcome to Library Manager 5000</h1>
+          <p><em>The library that helps libraries!</em></p>
+          </br>
+        </div>
+        <ul>
+          <li><a href="/libraries">Libraries List</a></li>
+          <li><a href="/books">Book Selecion</a></li>
+          <li><a href="/patrons">Customers List</a></li>
+          <li><a href="/staff_members">Employee List</a></li>
+          <li><a href="http://lincolnlibraries.org/locations/"target="_blank">Find the closest location!</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    </div>
+
+
+    <div class = "b1" </div>
+      <div class = "space_top"></div>
+      <div class = "pad_top pad_bottom">
+
+        <%= yield %>
+
+      </div>
+  </body>
+</html>

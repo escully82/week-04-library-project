@@ -1,0 +1,22 @@
+<% if @library.errors.any? %>
+  <% @library.errors.full_messages.each do |m| %>
+    <p>Error: <%= m %></p>
+  <% end %>
+<% end %>
+
+<div class="c1">
+
+<h2>New Library</h2>
+
+<form action="/libraries" method="post">
+  Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="branch_name"></br>
+  Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text", name="address"></br>
+  Phone Number:&nbsp&nbsp<input type="text", name="phone_number"></br>
+  <input type="submit" value="New Library">
+</form>
+</br>
+<div class="center_text">
+<p><a href="/">Back to Homepage</a></p>
+</div>
+
+</div>
