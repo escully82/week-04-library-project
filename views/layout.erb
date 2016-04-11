@@ -62,7 +62,7 @@
       text-decoration: none;
       font-family: 'Raleway', sans-serif;
       font-weight:300;
-      color:grey;
+      color:#ffffff;
     }
 
 
@@ -88,10 +88,23 @@
       font-size: 40pt;
     }
 
+    h4 { /*lib index page*/
+      font-family: 'Raleway', sans-serif;
+      font-weight:600;
+      color:#ffffff;
+      font-size: 20pt;
+    }
+
     p {
       font-family: 'Raleway', sans-serif;
       font-weight:400;
       color:grey;
+    }
+
+    .p_blue {
+      font-family: 'Raleway', sans-serif;
+      font-weight:400;
+      color:#43a7de;
     }
 
     .albert_quote {
@@ -129,23 +142,7 @@
 	     border-left:none;
      }
 
-     form {
-       text-align: center;
-       text-decoration:none;
-       background: none;
-       color: white;
-       font-family: 'Raleway', sans-serif;
-       font-weight: 400;
-     }
 
-     input {
-       text-decoration:none;
-       background: none;
-       color: white;
-       font-family: 'Raleway', sans-serif;
-       font-weight: 400;
-       text-align: center;
-     }
 
      .left {
        float:left;
@@ -163,6 +160,19 @@
      .space_top {
        margin-top:5%;
       }
+
+      .space_right {
+        margin-right:5%;
+      }
+
+       .space_bottom {
+         margin-bottom:5%;
+       }
+
+      .space_left {
+        margin-left:5%;
+      }
+
      .pad_top {
        padding-top:5%;
       }
@@ -183,10 +193,115 @@
         padding: 5%;
       }
 
+      .pad_top_2 {
+        padding-top:2%;
+       }
+
+      .pad_right_2 {
+        padding-right:2%;
+       }
+
+       .pad_bottom_2 {
+       padding-bottom:2%;
+       }
+
+       .pad_left_2 {
+         padding-left:2%;
+       }
+
+       .pad_all_2 {
+         padding: 2%;
+       }
+
+       .pad_right_3 {
+         padding-right:15%;
+       }
+
+       .pad_left_3 {
+         padding-left:15%;
+       }
+
       .c1{
         background-color:rgba(67,167,222, 0.7)
       }
-      background:rgba(#43a7de;.7)
+
+      .c2 {
+        background-color: rgba(192,192,192,0.6)
+      }
+
+      #footer_box{
+	      background:none;
+	      padding:10px;
+      }
+
+      footer {
+        background-color:rgba(192,192,192,0.6);
+	      vertical-align: middle;
+	      width:100%;
+        color: #00A1A6;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+/* -- FORMS CSS  -- */
+
+      form li{
+        color:grey;
+        display:block;
+        margin-bottom:2%;
+      }
+
+      input, label, textarea{
+        color:grey;
+        width:45%;
+        padding:10px;
+        font-size:1.1em;
+      }
+      textarea, output {
+        color:grey;
+      }
+
+      textarea, input {
+	      font-family: 'Raleway', sans-serif;
+	      font-weight:300;
+        color:#91908f;
+        border-radius:5px;
+        background:#ffffff;
+        border:2px #91908f ;
+        outline: none;
+        width: 60%;
+        display: block;
+      }
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+  label.error{color:black;}/*color of error text*/
+  input.error, textarea.error{background:#ffffff;}/*color of error highlight*/
+
+input:focus, textarea:focus{
+  background:#ffffff;
+  color:grey;
+  font-weight:300;
+}
+.extra_field{
+ display:none;/* hides robot test field */
+}
+
+
+#submit{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:25%;
+  background: #ffffff;
+  -webkit-appearance:none;
+}
+
 
 Grid system
 .grid_100,.grid_10,.grid_15,.grid_20,.grid_25,
@@ -280,7 +395,7 @@ Grid system
 
 
     </style>
-    <title>Bug Tracker</title>
+    <title>LM 5000</title>
   </head>
   <div class = "b1" </div>
   <body>
@@ -314,5 +429,11 @@ Grid system
         <%= yield %>
 
       </div>
+    <div id="footer_box">
+      <div class="b1 clearfix"></div>
+      <footer>
+        <p>Visit your local library, today!</p>
+      </footer>
+    </div>
   </body>
 </html>

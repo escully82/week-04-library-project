@@ -1,0 +1,39 @@
+<div class="clearfix grid_100 c1 left  pad_bottom">
+<div class="grid_100 pad_left_2">
+<h4>Edit Library</h4>
+</div>
+<div class="gird_100 b1"></div>
+<div class="grid_45 left pad_left_2">
+
+<% if @library %>
+
+<h4><%= @library.branch_name %></h4>
+
+   <p><em>Name:</em> <%= @library.branch_name %></p>
+
+   <% else %>
+     <p>No library of that ID exists</p>
+   <% end %>
+
+ <p><a href="/libraries">Back to Libraries Index</a></p>
+
+</div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/libraries/:id">Show Libraries</a></p>
+
+    <p class="p_blue"><a href="/libraries/:id/edit">Edit Libraries</a></p>
+
+    <p><a href="/libraries/new">New Library</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+</div>

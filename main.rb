@@ -65,6 +65,7 @@ get '/libraries/new' do
 end
 
 # Create
+
 post '/libraries' do
   # create library object
   @library = Library.new(params)
@@ -77,9 +78,31 @@ post '/libraries' do
 end
 
 # Show
+
 get '/libraries/:id' do
+  @libraries = Library.all
   @library = Library.find_by_id(params['id']) # nil or Library object
   erb :libraries_show
 end
+
+# Edit
+
+get '/libraries/:id/edit' do
+   @library = Library.find_by_id(params['id'])
+
+   erb :libraries_edit
+ end
+
+ post '/libraries/:id' do
+   @library = Library.find_by_id(params['id'])
+
+   if @library.update_attributes(branch_name: params['branch_name'],
+                                address: params['address'],
+                                phone_number: params['phone_number'])
+     redirect to("/libraries/#{@library.id}")
+   else
+     erb :libraries_edit
+   end
+ end
 
 binding.pry
