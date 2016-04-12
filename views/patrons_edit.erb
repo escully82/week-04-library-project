@@ -1,0 +1,56 @@
+<div class="grid_100 left c1">
+
+<div class="grid_100 left pad_left_2">
+<h4>Patron Editor</h4>
+</div>
+
+<div class="grid_100 b1"></div>
+
+<div class="grid_100 left pad_left_2">
+  <h4>Edit: <%= @patron.name %></h4>
+</div>
+
+<div class="grid_45 left pad_bottom pad_left">
+
+<div id="form_container">
+  <form action="/patrons/<%= @patron.id %>" method="post">
+    <ul>
+      <li><label>Name</label>
+      <input type="text" name="name" value="<%= @patron.name %>"></br></li>
+
+      <li><label>Email Address</label>
+      <input type="text", name="email" value="<%= @patron.email %>"></br></li>
+
+      <input type="submit" value="Edit Patron">
+    </ul>
+  </form>
+</div>
+</div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/patrons/:id">Show Patrons</a></p>
+
+    <p class="p_blue"><a href="/patrons/:id/edit">Edit Patrons</a></p>
+
+    <p><a href="/patrons/new">New Patron</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="grid_100 left">
+  <div class="center_text pad_all">
+    <h1>"My Alma mater was books, a good library... I could spend the rest of my life reading, just satisfying my curiosity."</h1>
+  <p class="albert_quote">Malcolm X</p>
+  </div>
+</div>

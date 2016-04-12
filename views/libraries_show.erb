@@ -9,17 +9,30 @@
 
 <h4><%= @library.branch_name %></h4>
 
-   <p><em>Name:</em> <%= @library.branch_name %></p>
+   <p>
+     <em>Name:</em>
+     <%= @library.branch_name %></br>
+     <em>Address:</em>
+     <%= @library.address %></br>
+     <em>Phone Number:</em>
+     <%= @library.phone_number %>
+   </p>
 
-   <% else %>
-     <p>No library of that ID exists</p>
+     <ol>
+       <% @libraries.each do |library| %>
+          <li><a href="/libraries/:id<%= library.id %>">
+          <%= library.branch_name %>
+          </a></li>
+        <% end %>
+     </ol>
+
+
    <% end %>
 
  <p><a href="/libraries">Back to Libraries Index</a></p>
 
 </div>
 
-<div class="grid_45 left pad_left_2 pad_right_2">
 
   <div class="grid_45 left  pad_left_2 pad_right_2">
 
@@ -36,4 +49,11 @@
 
   </div>
 
-</div>
+  </div>
+
+  <div class="grid_100 left">
+    <div class="center_text pad_all">
+      <h1>"Reading is to the mind what exercise is to the body."</h1>
+    <p class="albert_quote">Joseph Addison</p>
+    </div>
+  </div>

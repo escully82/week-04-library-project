@@ -1,7 +1,7 @@
 <div class = "grid_100 c1 pad_top_2 pad_bottom left">
 
 <div class="grid_100 left pad_left_2">
-  <h4>Libraries Index</h4>
+  <h4>Books Index</h4>
 
 </div>
 
@@ -9,12 +9,12 @@
 
 <div class="grid_45 left pad_left_2 pad_right_2">
 
-  <h4>Libraries List</h4>
+  <h4>Books List</h4>
 
   <ol>
-    <% @libraries.each do |library| %>
-      <li><a href="/libraries/<%= library.id %>">
-      <%= library.branch_name %></a></li>
+    <% @books.each do |book| %>
+      <li><a href="/books/<%= book.id %>">
+      <%= book.title %></a></li>
       <% end %>
   </ol>
 
@@ -25,11 +25,11 @@
 
   <h4>Menu Options</h4>
 
-  <p class="p_blue"><a href="/libraries/:id">Show Libraries</a></p>
+  <p class="p_blue"><a href="/books/:id">Show Books</a></p>
 
-  <p class="p_blue"><a href="/libraries/:id/edit">Edit Libraries</a></p>
+  <p class="p_blue"><a href="/books/:id/edit">Edit Books</a></p>
 
-  <p><a href="/libraries/new">New Library</a></p>
+  <p><a href="/books/new">New Book</a></p>
 
   <p><a href="/">Back to Homepage</a></p>
 
@@ -39,7 +39,7 @@
 
 <div class="grid_100 left">
   <div class="center_text pad_all">
-    <h1>"We cannot solve our problems with the same thinking we used when we created them."</h1>
+    <h1>"Try not to become a man of success, but rather try to become a man of value."</h1>
   <p class="albert_quote">Albert Einstein</p>
   </div>
 </div>

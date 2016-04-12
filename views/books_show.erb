@@ -1,0 +1,55 @@
+<div class="grid_100 c1 left  pad_bottom">
+<div class="grid_100 left pad_left_2">
+<h4>Find Book</h4>
+</div>
+<div class="grid_100 left b1"></div>
+<div class="grid_45 left pad_left_2">
+
+<% if @book %>
+
+  <h4><%= @book.title %></h4>
+
+     <p><em>Title:</em>
+     <%= @book.title %>
+     </p>
+     <p><em>Author:</em>
+     <%= @book.author %>
+     </p>
+     <p><em>ISBN:</em>
+     <%= @book.isbn %>
+     </p>
+
+  <p><a
+    href="/books/<=% @book.id %>/edit">Edit this Book
+  </a></p>
+
+<% end %>
+
+ <p><a href="/books">Back to Books Index</a></p>
+
+</div>
+
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/books/:id">Show Books</a></p>
+
+    <p class="p_blue"><a href="/books/:id/edit">Edit Books</a></p>
+
+    <p><a href="/books/new">New Book</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+</div>
+
+  <div class="grid_100 left">
+    <div class="center_text pad_all">
+      <h1>"Either write something worth reading or do something worth writing."</h1>
+    <p class="albert_quote">Benjamin Franklin</p>
+    </div>
+  </div>

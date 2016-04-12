@@ -5,7 +5,7 @@
     >
     <style>
 
-    #header_box, #footer_box {
+  #header_box, #footer_box {
 	     clear: both;
      }
 
@@ -221,6 +221,14 @@
          padding-left:15%;
        }
 
+       .pad_right_4 {
+         padding-right:25%;
+       }
+
+       .pad_left_4 {
+         padding-left:25%;
+       }
+
       .c1{
         background-color:rgba(67,167,222, 0.7)
       }
@@ -231,7 +239,6 @@
 
       #footer_box{
 	      background:none;
-	      padding:10px;
       }
 
       footer {
@@ -297,7 +304,7 @@ input:focus, textarea:focus{
   display:block;
   margin-left:auto;
   margin-right:auto;
-  width:25%;
+  width:35%;
   background: #ffffff;
   -webkit-appearance:none;
 }
@@ -397,7 +404,6 @@ Grid system
     </style>
     <title>LM 5000</title>
   </head>
-  <div class = "b1" </div>
   <body>
 
     <div id="header_box">
@@ -405,8 +411,9 @@ Grid system
     <div id="nav_box">
       <nav class="clearfix">
         <div class="center">
-          <h1>Welcome to Library Manager 5000</h1>
+          <li><a href="/"><h1>Welcome to Library Manager 5000</h1>
           <p><em>The library that helps libraries!</em></p>
+          </a></li>
           </br>
         </div>
         <ul>
@@ -422,16 +429,12 @@ Grid system
     </div>
 
 
-    <div class = "b1" </div>
-      <div class = "space_top"></div>
-      <div class = "pad_top pad_bottom">
-
+      <div class = "grid_100 left b1"></div>
+      <div class="grid_100 left"></div>
         <%= yield %>
 
-      </div>
     <div id="footer_box">
-      <div class="b1 clearfix"></div>
-      <footer>
+      <footer class="left">
         <p>Visit your local library, today!</p>
       </footer>
     </div>

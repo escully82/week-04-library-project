@@ -13,21 +13,20 @@
 <div class="grid_45 left pad_bottom pad_left">
 
 <div id="form_container">
-  <ul>
-    <form action="/libraries/<%= @library.id %>" method="post">
-
+  <form action="/libraries/<%= @library.id %>" method="post">
+    <ul>
       <li><label>Name</label>
       <input type="text" name="branch_name" value="<%= @library.branch_name %>"></br></li>
 
-        <li><label>Address</label>
-        <input type="text", name="address" value="<%= @library.address %>"></br></li>
+      <li><label>Address</label>
+      <input type="text", name="address" value="<%= @library.address %>"></br></li>
 
-        <label>Phone Number</label>
-        <input type="text", name="phone_number" value="<%= @library.phone_number %>"></br></li>
+      <li><label>Phone Number</label>
+      <input type="text", name="phone_number" value="<%= @library.phone_number %>"></br></li>
 
-        <input type="submit" value="Edit Library">
+      <input type="submit" value="Edit Library">
     </ul>
- </form>
+  </form>
 </div>
 </div>
 
@@ -50,4 +49,11 @@
 
 </div>
 
+</div>
+
+<div class="grid_100 left">
+  <div class="center_text pad_all">
+    <h1>"I never feel lonely if I've got a book - they're like old friends. Even if you're not reading them over and over again, you know they are there. And they're part of your history. They sort of tell a story about your journey through life."</h1>
+  <p class="albert_quote">Emilia Fox</p>
+  </div>
 </div>

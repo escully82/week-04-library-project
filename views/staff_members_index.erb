@@ -1,0 +1,45 @@
+<div class = "grid_100 c1 pad_top_2 pad_bottom left">
+
+<div class="grid_100 left pad_left_2">
+  <h4>Staff Members Index</h4>
+
+</div>
+
+<div class="grid_100 b1 left"></div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <h4>Staff Members List</h4>
+
+  <ol>
+    <% @staff_members.each do |staff_member| %>
+      <li><a href="/staff_members/<%= staff_member.id %>">
+      <%= staff_member.name %></a></li>
+      <% end %>
+  </ol>
+
+</div>
+
+<div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+  <h4>Menu Options</h4>
+
+  <p class="p_blue"><a href="/staff_members/:id">Show Staff Members</a></p>
+
+  <p class="p_blue"><a href="/staff_members/:id/edit">Edit Staff Members</a></p>
+
+  <p><a href="/staff_members/new">New Staff Member</a></p>
+
+  <p><a href="/">Back to Homepage</a></p>
+
+</div>
+
+</div>
+
+<div class="grid_100 left">
+  <div class="center_text pad_all">
+    <h1>"You can make positive deposits in your own economy every day by reading and listening to powerful, positive, life-changing content and by associating with encouraging and hope-building people."</h1>
+  <p class="albert_quote">Zig Ziglar</p>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="grid_100 left c1">
+
+<div class="grid_100 left pad_left_2">
+<h4>Book Editor</h4>
+</div>
+
+<div class="grid_100 b1"></div>
+
+<div class="grid_100 left pad_left_2">
+  <h4>Edit: <%= @book.title %></h4>
+</div>
+
+<div class="grid_45 left pad_bottom pad_left">
+
+<div id="form_container">
+  <form action="/books/<%= @book.id %>" method="post">
+    <ul>
+      <li><label>Title:</label>
+      <input type="text" name="title" value="<%= @book.title %>"></br></li>
+
+      <li><label>Author:</label>
+      <input type="text", name="author" value="<%= @book.author %>"></br></li>
+
+      <label>ISBN:</label>
+      <input type="text", name="isbn" value="<%= @book.isbn %>"></br></li>
+
+      <input type="submit" value="Edit Book">
+    </ul>
+  </form>
+</div>
+</div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/books/:id">Show Books</a></p>
+
+    <p class="p_blue"><a href="/books/:id/edit">Edit Books</a></p>
+
+    <p><a href="/books/new">New Book</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="grid_100 left">
+  <div class="center_text pad_all">
+    <h1>"The books that help you most are those which make you think that most. The hardest way of learning is that of easy reading; but a great book that comes from a great thinker is a ship of thought, deep freighted with truth and beauty."</h1>
+  <p class="albert_quote">Pablo Neruda</p>
+  </div>
+</div>

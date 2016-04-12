@@ -1,0 +1,57 @@
+<div class="clearfix grid_100 c1 left  pad_bottom">
+<div class="grid_100 pad_left_2">
+<h4>Edit Staff Members</h4>
+</div>
+<div class="gird_100 b1"></div>
+<div class="grid_45 left pad_left_2">
+
+<% if @staff_member %>
+
+<h4><%= @staff_member.name %></h4>
+
+   <p>
+     <em>Name:</em>
+     <%= @staff_member.name %></br>
+     <em>Email Address:</em>
+     <%= @staff_member.email %></br>
+   </p>
+
+     <ol>
+       <% @staff_members.each do |staff_member| %>
+          <li><a href="/staff_members/:id<%= staff_member.id %>">
+          <%= staff_member.name %>
+          </a></li>
+        <% end %>
+     </ol>
+
+
+   <% end %>
+
+ <p><a href="/staff_members">Back to Staff Members Index</a></p>
+
+</div>
+
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/staff_members/:id">Show Staff Members</a></p>
+
+    <p class="p_blue"><a href="/staff_members/:id/edit">Edit Staff Member</a></p>
+
+    <p><a href="/staff_members/new">New Staff Member</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+</div>
+
+  <div class="grid_100 left">
+    <div class="center_text pad_all">
+      <h1>There are three kinds of men. The one that learns by reading. The few who learn by observation. The rest of them have to pee on the electric fence for themselves.</h1>
+    <p class="albert_quote">Will Rogers</p>
+    </div>
+  </div>

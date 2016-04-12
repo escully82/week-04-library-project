@@ -1,0 +1,45 @@
+<div class = "grid_100 c1 pad_top_2 pad_bottom left">
+
+<div class="grid_100 left pad_left_2">
+  <h4>Patrons Index</h4>
+
+</div>
+
+<div class="grid_100 b1 left"></div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <h4>Patrons List</h4>
+
+  <ol>
+    <% @patrons.each do |patron| %>
+      <li><a href="/patrons/<%= patron.id %>">
+      <%= patron.name %></a></li>
+      <% end %>
+  </ol>
+
+</div>
+
+<div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+  <h4>Menu Options</h4>
+
+  <p class="p_blue"><a href="/patrons/:id">Show Patrons</a></p>
+
+  <p class="p_blue"><a href="/patrons/:id/edit">Edit Patrons</a></p>
+
+  <p><a href="/patrons/new">New Patron</a></p>
+
+  <p><a href="/">Back to Homepage</a></p>
+
+</div>
+
+</div>
+
+<div class="grid_100 left">
+  <div class="center_text pad_all">
+    <h1>"The things I want to know are in books; my best friend is the man who'll get me a book I ain't read."</h1>
+  <p class="albert_quote">Abraham Lincoln</p>
+  </div>
+</div>

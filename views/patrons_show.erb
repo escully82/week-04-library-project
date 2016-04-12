@@ -1,0 +1,59 @@
+<div class="clearfix grid_100 c1 left  pad_bottom">
+<div class="grid_100 pad_left_2">
+<h4>Edit Patron</h4>
+</div>
+<div class="gird_100 b1"></div>
+<div class="grid_45 left pad_left_2">
+
+<% if @patron %>
+
+<h4><%= @patron.name %></h4>
+
+   <p>
+     <em>Name:</em>
+     <%= @patron.name %></br>
+     <em>Email Address:</em>
+     <%= @patron.email %></br>
+   </p>
+
+     <ol>
+       <% @patrons.each do |patron| %>
+          <li><a href="/patrons/:id<%= patron.id %>">
+          <%= patron.name %>
+          </a></li>
+        <% end %>
+     </ol>
+
+
+   <% end %>
+
+ <p><a href="/patrons">Back to Patrons Index</a></p>
+
+</div>
+
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/patrons/:id">Show Patrons</a></p>
+
+    <p class="p_blue"><a href="/patrons/:id/edit">Edit Patrons</a></p>
+
+    <p><a href="/patrons/new">New Patron</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+  </div>
+
+</div>
+
+  <div class="grid_100 left">
+    <div class="center_text pad_all">
+      <h1>"A home without books is a body without soul."</h1>
+    <p class="albert_quote">Marcus Tullius Cicero</p>
+    </div>
+  </div>

@@ -1,0 +1,63 @@
+<% if @patron.errors.any? %>
+  <% @patron.errors.full_messages.each do |m| %>
+    <p>Error: <%= m %></p>
+  <% end %>
+<% end %>
+
+<div class="grid_100 left c1 pad_bottom">
+
+  <div class="grid_100 left pad_left_2">
+    <h4>New Patron</h4>
+  </div>
+
+  <div class="grid_100 b1"></div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <div id="form_container">
+
+      <form action="/patrons" method="POST">
+
+      	<h4>Add Patron to LM-5000</h4>
+
+      	<ul>
+
+      		<li>
+      		  <label>Name</label>
+            <input type="text" name="name" required >
+      		</li>
+
+      		<li>
+      		  <label>Email Address</label>
+      		  <input type="text" name="email" required>
+      		</li>
+
+      		<input id="submit" type="submit" value="Add Patron">
+      	</ul>
+      </form>
+  </div>
+</br>
+
+</div>
+
+<div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+  <h4>Menu Options</h4>
+
+  <p class="p_blue"><a href="/patrons/:id">Show Patrons</a></p>
+
+  <p class="p_blue"><a href="/patrons/:id/edit">Edit Patrons</a></p>
+
+  <p><a href="/patrons/new">New Patron</a></p>
+
+  <p><a href="/">Back to Homepage</a></p>
+
+</div>
+
+</div>
+
+<div class="grid_100 left center_text pad_top pad_bottom">
+  <h1>"There are worse crimes than burning books. One of them is not reading them."</h1>
+  <p>Ray Bradbury</p>
+</div>

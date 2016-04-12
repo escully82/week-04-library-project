@@ -1,0 +1,56 @@
+<div class="grid_100 left c1">
+
+<div class="grid_100 left pad_left_2">
+<h4>Staff Member Editor</h4>
+</div>
+
+<div class="grid_100 b1"></div>
+
+<div class="grid_100 left pad_left_2">
+  <h4>Edit: <%= @staff_member.name %></h4>
+</div>
+
+<div class="grid_45 left pad_bottom pad_left">
+
+<div id="form_container">
+  <form action="/staff_members/<%= @staff_member.id %>" method="post">
+    <ul>
+      <li><label>Name</label>
+      <input type="text" name="name" value="<%= @staff_member.name %>"></br></li>
+
+      <li><label>Email Address</label>
+      <input type="text", name="email" value="<%= @staff_member.email %>"></br></li>
+
+      <input type="submit" value="Edit Staff Member">
+    </ul>
+  </form>
+</div>
+</div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+    <h4>Menu Options</h4>
+
+    <p class="p_blue"><a href="/staff_members/:id">Show Staff Members</a></p>
+
+    <p class="p_blue"><a href="/staff_members/:id/edit">Edit Staff Member</a></p>
+
+    <p><a href="/staff_members/new">New Staff Member</a></p>
+
+    <p><a href="/">Back to Homepage</a></p>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="grid_100 left">
+  <div class="center_text pad_all">
+    <h1>"My Alma mater was books, a good library... I could spend the rest of my life reading, just satisfying my curiosity."</h1>
+  <p class="albert_quote">Malcolm X</p>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<% if @book.errors.any? %>
+  <% @book.errors.full_messages.each do |m| %>
+    <p>Error: <%= m %></p>
+  <% end %>
+<% end %>
+
+<div class="grid_100 left c1 pad_bottom">
+
+  <div class="grid_100 left pad_left_2">
+    <h4>New Book</h4>
+  </div>
+
+  <div class="grid_100 b1"></div>
+
+<div class="grid_45 left pad_left_2 pad_right_2">
+
+  <div id="form_container">
+
+      <form action="/books" method="POST">
+
+      	<h4>Add Book to LM-5000</h4>
+
+      	<ul>
+
+      		<li>
+      		  <label>Title</label>
+            <input type="text" name="title" required >
+      		</li>
+
+      		<li>
+      		  <label>Author</label>
+      		  <input type="text" name="author" required>
+      		</li>
+
+      		<li>
+      		  <label>ISBN</label>
+            <input type="text" name="isbn">
+      		</li>
+
+      		<input id="submit" type="submit" value="Add Book">
+      	</ul>
+      </form>
+  </div>
+</br>
+
+</div>
+
+<div class="grid_45 left  pad_left_2 pad_right_2">
+
+
+  <h4>Menu Options</h4>
+
+  <p class="p_blue"><a href="/books/:id">Show Books</a></p>
+
+  <p class="p_blue"><a href="/books/:id/edit">Edit Books</a></p>
+
+  <p><a href="/books/new">New Book</a></p>
+
+  <p><a href="/">Back to Homepage</a></p>
+
+</div>
+
+</div>
+
+<div class="grid_100 left center_text pad_top pad_bottom">
+  <h1>"There are worse crimes than burning books. One of them is not reading them."</h1>
+  <p>Ray Bradbury</p>
+</div>
