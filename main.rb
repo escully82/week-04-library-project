@@ -275,7 +275,7 @@ get '/libraries/:id/edit' do
      @staff_member = StaffMember.new(params)
 
      if @staff_member.save
-       redirect to('/patrons')
+       redirect to('/staff_members')
      else
        erb :staff_members_new
      end

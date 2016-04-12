@@ -16,18 +16,11 @@
      <%= @patron.email %></br>
    </p>
 
-     <ol>
-       <% @patrons.each do |patron| %>
-          <li><a href="/patrons/:id<%= patron.id %>">
-          <%= patron.name %>
-          </a></li>
-        <% end %>
-     </ol>
-
+   <p><a
+     href="/patrons/<%= @patron.id %>/edit">Edit this Customer
+   </a></p>
 
    <% end %>
-
- <p><a href="/patrons">Back to Patrons Index</a></p>
 
 </div>
 
@@ -37,11 +30,9 @@
 
     <h4>Menu Options</h4>
 
-    <p class="p_blue"><a href="/patrons/:id">Show Patrons</a></p>
-
-    <p class="p_blue"><a href="/patrons/:id/edit">Edit Patrons</a></p>
-
     <p><a href="/patrons/new">New Patron</a></p>
+
+    <p><a href="/patrons">Back to Patrons Index</a></p>
 
     <p><a href="/">Back to Homepage</a></p>
 

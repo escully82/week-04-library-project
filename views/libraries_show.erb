@@ -18,18 +18,12 @@
      <%= @library.phone_number %>
    </p>
 
-     <ol>
-       <% @libraries.each do |library| %>
-          <li><a href="/libraries/:id<%= library.id %>">
-          <%= library.branch_name %>
-          </a></li>
-        <% end %>
-     </ol>
+<p><a
+  href="/libraries/<%= @library.id %>/edit">Edit this Library
+</a></p>
 
 
    <% end %>
-
- <p><a href="/libraries">Back to Libraries Index</a></p>
 
 </div>
 
@@ -39,12 +33,10 @@
 
     <h4>Menu Options</h4>
 
-    <p class="p_blue"><a href="/libraries/:id">Show Libraries</a></p>
-
-    <p class="p_blue"><a href="/libraries/:id/edit">Edit Libraries</a></p>
-
     <p><a href="/libraries/new">New Library</a></p>
 
+    <p><a href="/libraries">Back to Libraries Index</a></p>
+    
     <p><a href="/">Back to Homepage</a></p>
 
   </div>

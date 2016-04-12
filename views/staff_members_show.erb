@@ -11,23 +11,23 @@
 
    <p>
      <em>Name:</em>
-     <%= @staff_member.name %></br>
+   </p>
+   <p class="p_grey_bold">
+     <%= @staff_member.name %>
+   </p>
+   <p>
      <em>Email Address:</em>
-     <%= @staff_member.email %></br>
+   </p>
+   <p class="p_grey_bold">
+     <%= @staff_member.email %>
    </p>
 
-     <ol>
-       <% @staff_members.each do |staff_member| %>
-          <li><a href="/staff_members/:id<%= staff_member.id %>">
-          <%= staff_member.name %>
-          </a></li>
-        <% end %>
-     </ol>
+   <p><a
+     href="/staff_members/<%= @staff_member.id %>/edit">Edit this Staff Member
+   </a></p>
 
 
    <% end %>
-
- <p><a href="/staff_members">Back to Staff Members Index</a></p>
 
 </div>
 
@@ -37,11 +37,9 @@
 
     <h4>Menu Options</h4>
 
-    <p class="p_blue"><a href="/staff_members/:id">Show Staff Members</a></p>
-
-    <p class="p_blue"><a href="/staff_members/:id/edit">Edit Staff Member</a></p>
-
     <p><a href="/staff_members/new">New Staff Member</a></p>
+
+    <p><a href="/staff_members">Back to Staff Members Index</a></p>
 
     <p><a href="/">Back to Homepage</a></p>
 
@@ -51,7 +49,7 @@
 
   <div class="grid_100 left">
     <div class="center_text pad_all">
-      <h1>There are three kinds of men. The one that learns by reading. The few who learn by observation. The rest of them have to pee on the electric fence for themselves.</h1>
+      <h1>"There are three kinds of men. The one that learns by reading. The few who learn by observation. The rest of them have to pee on the electric fence for themselves."</h1>
     <p class="albert_quote">Will Rogers</p>
     </div>
   </div>
